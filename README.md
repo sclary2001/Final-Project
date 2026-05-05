@@ -8,7 +8,7 @@
 
 Sean Clary
 GitHub: https://github.com/sclary2001
-LinkedIn: https://www.linkedin.com/ (ADD YOUR LINK)
+LinkedIn: https://www.linkedin.com/sclary-b25472373
 
 ---
 
