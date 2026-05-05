@@ -1,48 +1,46 @@
 # Sean Clary Portfolio
 
-> A personal portfolio website showcasing my military background, IT skills, and web development projects.
+> A professional portfolio showcasing my military background, technical skills, and web development projects.
 
 ---
 
 ## 👤 Author
 
-Sean Clary  
-GitHub: https://github.com/sclary2001  
-LinkedIn: ADD YOUR LINK HERE  
+Sean Clary
+GitHub: https://github.com/sclary2001
+LinkedIn: https://www.linkedin.com/ (ADD YOUR LINK)
 
 ---
 
 ## 🧭 User Story
 
-- *As a visitor*  
-- *I want to view Sean Clary’s background, projects, and contact information*  
-- *So that I can learn about his experience and technical skills*
+* *As a visitor*
+* *I want to view Sean Clary’s background, projects, and contact information*
+* *So that I can learn about his experience and technical skills*
 
 ---
 
 ## 📖 Narrative
 
-This portfolio was created as a final project for a web development course. The goal was to build a clean, functional, and well-structured front-end web application.
+This portfolio was developed as a final project to demonstrate front-end web development skills including HTML, CSS, and JavaScript.
 
-I am currently a **2nd Lieutenant in the Alabama National Guard** and a **Computer Information Systems student at the University of North Alabama**. Before commissioning, I served **three years as an enlisted infantry soldier**. I graduated and commissioned from **Marion Military Institute** with my associate degree and completed military training at **Fort Benning, Georgia**.
+I am a **2nd Lieutenant in the Alabama National Guard** and a **Computer Information Systems student at the University of North Alabama**. Prior to commissioning, I served **three years as an enlisted infantry soldier**. I graduated from **Marion Military Institute** and completed training at **Fort Benning, Georgia**.
 
-I chose to build a personal portfolio because it is something I can continue using professionally. This project combines my military background with the web development concepts I learned during the semester.
+This project highlights both my technical growth and my ability to build structured, user-friendly applications.
 
 ---
 
 ## ⚙️ Features
 
-- Responsive Bootstrap layout  
-- Photo gallery with personal images  
-- Dynamic project loading using JSON and Fetch API  
-- Search/filter functionality  
-- Login/logout demo (hint in console: admin / 1234)  
-- Dark mode toggle using sessionStorage  
-- Contact form that outputs JSON to the console  
-- External CSS and JavaScript files  
-- `@import` used in CSS  
-- JavaScript module using `type="module"`  
-- DOM manipulation and event handling  
+* Responsive layout using Bootstrap
+* Photo gallery of personal experience
+* Dynamic project display using JSON + Fetch API
+* Search/filter functionality
+* Login/logout demo (admin / 1234 in console)
+* Dark mode toggle (sessionStorage)
+* Contact form that outputs JSON
+* Clean file structure with external CSS/JS
+* DOM manipulation and event handling
 
 ---
 
@@ -60,9 +58,99 @@ Final-Project/
 │   └── app.js
 └── styles/
     └── main.css
+```
+
+---
+
+## 🧠 Code Highlight
+
+```js
 fetch("data/projects.json")
   .then(res => res.json())
   .then(data => {
     projects = data;
     displayProjects(projects);
   });
+```
+
+### What it does
+
+Loads project data dynamically from a JSON file.
+
+### Why it matters
+
+Separates content from HTML, making the site scalable and maintainable.
+
+### How it works
+
+Fetch retrieves JSON data and dynamically displays it using DOM manipulation.
+
+---
+
+## ✅ Validation
+
+* HTML Validator: https://validator.w3.org/
+* WAVE Accessibility: https://wave.webaim.org/
+
+---
+
+## 🚀 Future Improvements (Sprint 99)
+
+* Improve mobile responsiveness
+* Add animations and UI enhancements
+* Expand project section
+* Add resume download
+* Improve accessibility
+
+---
+
+## 🌐 Deployment
+
+* GitHub Pages: https://sclary2001.github.io/Final-Project/
+* GCP Deployment: ADD YOUR IP HERE
+
+---
+
+## 🔗 Attribution
+
+* Bootstrap: https://getbootstrap.com/
+* Bootstrap Icons: https://icons.getbootstrap.com/
+* ChatGPT: used for development assistance
+* Images: Personal photos
+
+---
+
+## ⭐ Bonus
+
+* LinkedIn Profile added
+* Connected with instructor
+* Requested CSIS LinkedIn group
+
+---
+
+## 💡 Reflection
+
+This project demonstrates my ability to build a structured, functional web application. My military experience contributed to strong organization, discipline, and problem-solving skills throughout development.
+
+Final-Project/
+├── index.html
+├── README.md
+├── assets/
+│   └── images/
+│       ├── IMG_4240(1).jpeg
+│       ├── IMG_4272(1).jpeg
+│       ├── IMG_4276(1).jpeg
+│       ├── IMG_1575(1).jpeg
+│       └── IMG_5026(1).jpeg
+├── data/
+├── scripts/
+└── styles/
+Website:
+https://sclary2001.github.io/Final-Project/
+portfolio, html, css, javascript, web-dev
+## 🚀 Featured Project
+
+### Sean Clary Portfolio  
+> A professional portfolio showcasing my military and technical experience.
+
+🔗 https://github.com/sclary2001/Final-Project
