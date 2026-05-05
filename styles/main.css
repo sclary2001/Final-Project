@@ -6,8 +6,7 @@ body {
   color: #222;
 }
 
-header {
-  background: #f8f9fa;
+.hero {
   border-bottom: 1px solid #ddd;
 }
 
@@ -34,4 +33,26 @@ h2 {
 
 .gallery-img:hover {
   transform: none;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+.dark-mode .bg-light {
+  background-color: #222 !important;
+  color: #f1f1f1;
+}
+
+.dark-mode .card {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+}
+
+.dark-mode input,
+.dark-mode textarea {
+  background-color: #222;
+  color: #f1f1f1;
+  border-color: #555;
 }
