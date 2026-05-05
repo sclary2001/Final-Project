@@ -10,74 +10,117 @@
 </head>
 <body>
 
-<nav class="navbar navbar-dark bg-dark p-3">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
   <div class="container">
-    <span class="navbar-brand">Sean Clary</span>
+    <a class="navbar-brand" href="#">Sean Clary</a>
+    <button id="themeBtn" class="btn btn-outline-light btn-sm" type="button">Toggle Theme</button>
   </div>
 </nav>
 
-<header class="text-center p-5 bg-light">
-  <h1>Sean Clary</h1>
-  <p>2LT | Alabama National Guard | CIS Student</p>
+<header class="text-center p-5 bg-light hero">
+  <div class="container">
+    <h1>Sean Clary</h1>
+    <p class="lead">2LT | Alabama National Guard | Computer Information Systems Student</p>
+    <a href="#projects" class="btn btn-primary">View Projects</a>
+    <a href="#contact" class="btn btn-outline-dark">Contact Me</a>
+  </div>
 </header>
 
-<section class="container my-5">
-  <h2>About Me</h2>
-  <p>
-    I am Sean Clary, a 2nd Lieutenant in the Alabama National Guard and a Computer Information Systems student at the University of North Alabama.
-  </p>
-  <p>
-    Before commissioning, I served 3 years as an enlisted infantry soldier. I later graduated and commissioned from Marion Military Institute with my associate degree.
-  </p>
-  <p>
-    I also completed training at Fort Benning, Georgia. My background helped me build leadership, discipline, teamwork, and problem-solving skills.
-  </p>
-</section>
+<main>
+  <section class="container my-5">
+    <h2>About Me</h2>
+    <p>
+      I am Sean Clary, a 2nd Lieutenant in the Alabama National Guard and a Computer Information Systems student at the University of North Alabama.
+    </p>
+    <p>
+      Before commissioning, I served 3 years as an enlisted infantry soldier. I later graduated and commissioned from Marion Military Institute with my associate degree.
+    </p>
+    <p>
+      I also completed training at Fort Benning, Georgia. My background helped me build leadership, discipline, teamwork, and problem-solving skills.
+    </p>
+  </section>
 
-<section class="container my-5">
-  <h2>Photo Gallery</h2>
-  <p>A few moments from my military and academic journey.</p>
+  <section class="container my-5">
+    <h2>Photo Gallery</h2>
+    <p>A few moments from my military and academic journey.</p>
 
-  <div class="row g-4">
-    <div class="col-md-6 text-center">
-      <img src="assets/images/IMG_4240.jpeg" alt="Commissioning photo" class="gallery-img">
+    <div class="row g-4">
+      <div class="col-md-6 text-center">
+        <img src="assets/images/IMG_4240.jpeg" alt="Commissioning photo" class="gallery-img">
+      </div>
+
+      <div class="col-md-6 text-center">
+        <img src="assets/images/IMG_4272.jpeg" alt="Commissioning handshake" class="gallery-img">
+      </div>
+
+      <div class="col-md-6 text-center">
+        <img src="assets/images/IMG_4276.jpeg" alt="Commissioning certificate" class="gallery-img">
+      </div>
+
+      <div class="col-md-6 text-center">
+        <img src="assets/images/IMG_1575.jpeg" alt="Family and friends photo" class="gallery-img">
+      </div>
+
+      <div class="col-md-6 text-center">
+        <img src="assets/images/IMG_5026.jpeg" alt="Military uniform photo" class="gallery-img">
+      </div>
     </div>
+  </section>
 
-    <div class="col-md-6 text-center">
-      <img src="assets/images/IMG_4272.jpeg" alt="Commissioning handshake" class="gallery-img">
-    </div>
+  <section id="projects" class="container my-5">
+    <h2>Projects</h2>
+    <input type="text" id="search" class="form-control mb-3" placeholder="Search projects...">
+    <div id="projectsContainer" class="row"></div>
+  </section>
 
-    <div class="col-md-6 text-center">
-      <img src="assets/images/IMG_4276.jpeg" alt="Commissioning certificate" class="gallery-img">
-    </div>
+  <section class="container my-5">
+    <h2>Login Demo</h2>
+    <p class="small">Credential hint is printed in the console.</p>
 
-    <div class="col-md-6 text-center">
-      <img src="assets/images/IMG_1575.jpeg" alt="Family and friends photo" class="gallery-img">
-    </div>
+    <form id="loginForm" class="row g-2">
+      <div class="col-md-5">
+        <label for="username" class="form-label">Username</label>
+        <input class="form-control" id="username" placeholder="Username">
+      </div>
 
-    <div class="col-md-6 text-center">
-      <img src="assets/images/IMG_5026.jpeg" alt="Military uniform photo" class="gallery-img">
-    </div>
-  </div>
-</section>
+      <div class="col-md-5">
+        <label for="password" class="form-label">Password</label>
+        <input class="form-control" id="password" type="password" placeholder="Password">
+      </div>
 
-<section class="container my-5">
-  <h2>Projects</h2>
-  <input type="text" id="search" class="form-control mb-3" placeholder="Search projects...">
-  <div id="projects" class="row"></div>
-</section>
+      <div class="col-md-2 d-flex align-items-end">
+        <button class="btn btn-success w-100" type="submit">Login</button>
+      </div>
+    </form>
 
-<section class="container my-5">
-  <h2>Contact</h2>
-  <form id="contactForm">
-    <input class="form-control mb-2" id="name" placeholder="Name" required>
-    <input class="form-control mb-2" id="email" type="email" placeholder="Email" required>
-    <textarea class="form-control mb-2" id="message" placeholder="Message"></textarea>
-    <button class="btn btn-primary" type="submit">Submit</button>
-  </form>
-</section>
+    <button id="logoutBtn" class="btn btn-secondary mt-2" type="button">Logout</button>
+    <p id="loginStatus" class="mt-2"></p>
+  </section>
+
+  <section id="contact" class="container my-5">
+    <h2>Contact</h2>
+
+    <form id="contactForm">
+      <label for="name" class="form-label">Name</label>
+      <input class="form-control mb-2" id="name" placeholder="Name" required>
+
+      <label for="email" class="form-label">Email</label>
+      <input class="form-control mb-2" id="email" type="email" placeholder="Email" required>
+
+      <label for="message" class="form-label">Message</label>
+      <textarea class="form-control mb-2" id="message" placeholder="Message"></textarea>
+
+      <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+  </section>
+</main>
+
+<footer class="bg-dark text-white text-center p-3">
+  <p class="mb-0">&copy; 2026 Sean Clary</p>
+</footer>
 
 <script type="module" src="scripts/app.js"></script>
 
 </body>
+</html>
 </html>
