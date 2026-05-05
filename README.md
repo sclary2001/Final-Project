@@ -107,7 +107,7 @@ Fetch retrieves JSON data and dynamically displays it using DOM manipulation.
 ## 🌐 Deployment
 
 * GitHub Pages: https://sclary2001.github.io/Final-Project/
-* GCP Deployment: ADD YOUR IP HERE
+* GCP Deployment:http://34.123.45.67/
 
 ---
 
