@@ -74,6 +74,7 @@ document.getElementById("logoutBtn").addEventListener("click", () => {
 
 document.getElementById("themeBtn").addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
+
   const theme = document.body.classList.contains("dark-mode") ? "dark" : "light";
   sessionStorage.setItem("theme", theme);
 });
